@@ -1,3 +1,4 @@
+import videoData from './videoData.json';
 import './App.css';
 
 const App = () => {
