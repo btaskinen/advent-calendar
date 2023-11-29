@@ -1,2 +1,6 @@
 :root {
+  --backgroundColor: #010057;
+  --backgroundColorLight: #02006c;
+  --fontColor: #ffd700;
+  font-family: 'Andika', sans-serif;
 }

@@ -1,0 +1,22 @@
+.Door {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--fontColor);
+  border-radius: 5px;
+  aspect-ratio: 1;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Door:hover {
+  background-color: var(--backgroundColorLight);
+  border: 5px solid var(--fontColor);
+}
+
+.Door:active {
+  background-color: var(--backgroundColor);
+  border: 2px solid var(--fontColor);
+  font-weight: 400;
+}

@@ -1,0 +1,29 @@
+body {
+  background-color: var(--backgroundColor);
+  color: var(--fontColor);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 54px;
+  margin: 16px;
+}
+
+.doorContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+footer {
+  padding-top: 10px;
+}
