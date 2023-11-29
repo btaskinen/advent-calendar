@@ -10,6 +10,10 @@
   cursor: pointer;
 }
 
+.Door.open {
+  font-size: 18px;
+}
+
 .Door:hover {
   background-color: var(--backgroundColorLight);
   border: 5px solid var(--fontColor);

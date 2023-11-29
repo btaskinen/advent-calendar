@@ -1,0 +1,47 @@
+.Modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroundColor);
+  z-index: 10;
+}
+
+.Modal_content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.Modal_titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Modal_title {
+  font-size: 24px;
+}
+
+.Modal_closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--backgroundColor);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.Modal_closeSVG {
+  width: 32px;
+  height: 32px;
+  stroke: var(--fontColor);
+  background-color: var(--backgroundColor);
+}
