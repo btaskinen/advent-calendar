@@ -29,3 +29,24 @@
   text-align: center;
   padding: 4px;
 }
+
+@media screen and (min-width: 481px) and (max-width: 780px) {
+  .Door {
+    font-size: 24px;
+  }
+
+  .Door.open {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Door {
+    font-size: 24px;
+  }
+
+  .Door.open {
+    font-size: 12px;
+    overflow: hidden;
+  }
+}

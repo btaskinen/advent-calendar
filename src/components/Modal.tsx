@@ -21,8 +21,7 @@ const Modal = ({ onClick, video }: Props) => {
           </button>
         </div>
         <iframe
-          width="600"
-          height="340"
+          className="Modal_iframe"
           src={`https://www.youtube.com/embed/${videoID}`}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
