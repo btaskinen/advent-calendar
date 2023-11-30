@@ -39,9 +39,31 @@
   cursor: pointer;
 }
 
+.Modal_closeButton:hover {
+  opacity: 80%;
+}
+
 .Modal_closeSVG {
   width: 32px;
   height: 32px;
   stroke: var(--fontColor);
   background-color: var(--backgroundColor);
+}
+
+.Modal p {
+  font-size: 24px;
+}
+
+.Modal a {
+  color: var(--fontColor);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Modal a:hover {
+  color: var(--fontColorDarker);
+}
+
+.Modal a:visited {
+  color: var(--fontColorDark);
 }

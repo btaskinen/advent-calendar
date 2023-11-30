@@ -24,3 +24,8 @@
   border: 2px solid var(--fontColor);
   font-weight: 400;
 }
+
+.Door_innerDiv {
+  text-align: center;
+  padding: 4px;
+}

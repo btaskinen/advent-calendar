@@ -1,21 +1,19 @@
 import { useState } from 'react';
 import videoData from './videoData.json';
+import { videoContent } from './types';
 import Door from './components/Door';
 import Modal from './components/Modal';
 import './App.css';
 
 const App = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [selectedDoor, setSelectedDoor] = useState<number>(0);
-
-  console.log(selectedDoor);
-  console.log(videoData[selectedDoor]);
+  const [selectedVideo, setSelectedVideo] = useState<videoContent>(
+    videoData[14]
+  );
 
   return (
     <>
-      {modalOpen && (
-        <Modal onClick={setModalOpen} video={videoData[selectedDoor]} />
-      )}
+      {modalOpen && <Modal onClick={setModalOpen} video={selectedVideo} />}
       <div className="App">
         <h1>Advendt Calendar 2023</h1>
         <div className="doorContainer">
@@ -24,7 +22,7 @@ const App = () => {
               key={video.doorNumber}
               video={video}
               setModalOpen={setModalOpen}
-              setSelectedDoor={setSelectedDoor}
+              setSelectedDoor={setSelectedVideo}
             />
           ))}
         </div>

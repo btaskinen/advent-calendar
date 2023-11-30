@@ -21,8 +21,8 @@ const Modal = ({ onClick, video }: Props) => {
           </button>
         </div>
         <iframe
-          width="853"
-          height="480"
+          width="600"
+          height="340"
           src={`https://www.youtube.com/embed/${videoID}`}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -30,6 +30,12 @@ const Modal = ({ onClick, video }: Props) => {
           referrerPolicy="origin"
           title={`${artist} - ${songTitle}`}
         />
+        <p>
+          If video is unavailable, watch it from{' '}
+          <a href={`https://youtu.be/${videoID}`} target="_blank">
+            YouTube
+          </a>
+        </p>
       </div>
     </div>
   );
