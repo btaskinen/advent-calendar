@@ -36,7 +36,9 @@ const Door = ({ video, setModalOpen, setSelectedDoor }: Props) => {
 
   return (
     <div className={`Door ${doorStateClass}`} onClick={openDoor}>
-      <div className="Door_innerDiv">{doorText}</div>
+      <div className="Door_innerDiv" data-cy="door">
+        {doorText}
+      </div>
     </div>
   );
 };

@@ -15,8 +15,15 @@ const Modal = ({ onClick, video }: Props) => {
     <div className="Modal">
       <div className="Modal_content">
         <div className="Modal_titleContainer">
-          <p className="Modal_title">{`${artist} - ${songTitle}`}</p>
-          <button className="Modal_closeButton" onClick={() => onClick(false)}>
+          <p
+            className="Modal_title"
+            data-cy="modal-title"
+          >{`${artist} - ${songTitle}`}</p>
+          <button
+            className="Modal_closeButton"
+            data-cy="close-button"
+            onClick={() => onClick(false)}
+          >
             <CloseSVG className="Modal_closeSVG" />
           </button>
         </div>
@@ -28,10 +35,15 @@ const Modal = ({ onClick, video }: Props) => {
           allowFullScreen
           referrerPolicy="origin"
           title={`${artist} - ${songTitle}`}
+          data-cy="iframe"
         />
-        <p>
+        <p data-cy="modal-info-text">
           If video is unavailable, watch it from{' '}
-          <a href={`https://youtu.be/${videoID}`} target="_blank">
+          <a
+            href={`https://youtu.be/${videoID}`}
+            target="_blank"
+            data-cy="youtube-link"
+          >
             YouTube
           </a>
         </p>
