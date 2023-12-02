@@ -1,30 +1,9 @@
-# React + TypeScript + Vite
+# Advent Calendar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A music advent calendar that reveals a Chirstmas-themed music video every day of December.
 
-Currently, two official plugins are available:
+This is a TypeScript React app that was created with Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app is hosted on Fly.io and can be found from [https://advent-calendar.fly.dev/](https://advent-calendar.fly.dev/).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+For next years version, I'm planning to individualize the experience for every user. For this I will need a big collection of Christmas-themed music videos. If you have any suggestions, send them my way!
