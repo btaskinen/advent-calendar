@@ -7,7 +7,7 @@ describe('Advent Calendar App', () => {
   });
 
   it('Page has correct content', () => {
-    cy.get('[data-cy="app-title"]').contains('Advendt Calendar 2023');
+    cy.get('[data-cy="app-title"]').contains('Advent Calendar 2023');
     cy.get('[data-cy="door-container"]')
       .find('[data-cy="door"]')
       .each(($door, index) => {

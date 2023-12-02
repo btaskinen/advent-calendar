@@ -15,7 +15,7 @@ const App = () => {
     <>
       {modalOpen && <Modal onClick={setModalOpen} video={selectedVideo} />}
       <div className="App">
-        <h1 data-cy="app-title">Advendt Calendar 2023</h1>
+        <h1 data-cy="app-title">Advent Calendar 2023</h1>
         <div className="doorContainer" data-cy="door-container">
           {videoData.map((video) => (
             <Door
